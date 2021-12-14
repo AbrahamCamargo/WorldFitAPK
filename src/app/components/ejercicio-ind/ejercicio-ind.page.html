@@ -1,0 +1,592 @@
+<ion-header>
+  <ion-toolbar color="nav">
+    <ion-title>{{ejercicio}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- __________________________________________________________________________ -->
+  <div *ngIf = "ejercicio == 'Espalda'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Dominadas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Hiperextensión</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Jalones al pecho</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Peso muerto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Polea trasnuca</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Pull over en polea alta con brazos extendidos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo al mentón</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo con mancuernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo con barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo en barra T</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo en máquina horizontal</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo en polea baja</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Pecho'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Aleteo con cable</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Apertura unilateral</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Calentamiento con banda de resistencia</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexión con mancuernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones con peso</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones declinadas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones de codos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Fondos en paralela</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones inclinadas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexión de arquero</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Mancuernas contra el pecho</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Mancuernas sobrevolando tu cuerpo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press de banca con agarre cerrado</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press de banca declinado</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press de banca inclinado</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Hombros'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Encogimientos de hombros</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevaciones frontales</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevaciones laterales para hombros</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevaciones laterales en máquina</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones para hombros</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Levantamientos frontales de martillo alterno</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press Arnold con un solo brazo para hombros</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press de hombros con mancuernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press militar</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo al mentón</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo horizontal</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Trasnuca con barra en máquina multipower</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Cuadriceps'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Carrera (Sprint)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Ejercicios con Peso para Cuádriceps</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Extensión de Cuádriceps</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Paso Arriba</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Paseo del pato (Duck Walk)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Salto a Caja</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Salto de Cuerda</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Asistida</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Búlgara</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Búlgara con Barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadillas Búlgaras con Salto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadillas con pies elevados</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadillas con Barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla con Kettlebell (Globet Squat)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Gironda (Sissy Squat)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Hindú</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Isométrica</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Isométrica Una Pierna</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Skater</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Una Pierna</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Una Pierna Asistida</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla Una Pierna en Banco</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Zancada con Barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Zancadas o Estocadas</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Femorales'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Buenos días</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl femoral acostado</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Desplantes con máquina Smith</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Femoral de una sola pierna</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Hip thrust</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Peso muerto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Peso muerto rumano</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Prensa vertical</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla búlgara</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadillas con barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Zancadas hacia atrás con barra</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Gemelos'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Box Jumps o salto en cajón</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación de talón a una pierna</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación de punteras</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación de Gemelos Parado c/ Barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación de Gemelos Sentado c/ Máquina o Barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevacion frontal con banda resistencia</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación lateral con banda de resistencia</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación soleo en cuclillas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Glute Ham Raises (Curl nórdico)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Jumping Jacks</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Low Pogo Jumps / High Pogo Jumps</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Prensa</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Paseo del pato</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Saltos a la comba</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Saltos en puntas de pie</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sprints</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Steps con salto</ion-label>
+      </ion-item>
+      
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Gluteos'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Abducciones de piernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Camina</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevaciones de cadera</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Ejercicio escalador</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Hip thrust</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Patadas de glúteo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Peso muerto </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla sumo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sentadilla con salto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Zancada con salto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Zancada lateral</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Abdomen'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Bird dog</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Cable crunch</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Crunch con piernas elevadas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Crunch invertido</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Dragon flag</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevación de piernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Gator rolls</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Kettlebell decline core crush</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- La bicicleta</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Oblicuos utilizando un foam</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sit up con med ball</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Pasar la fitball de las piernas los brazos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Plancha con fitball</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Plancha inferior con Glidings</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Plancha isométrica</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Plancha Superman</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Plank pull</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Sit up</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Step core getup</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Biceps'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Curl bíceps Scott</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl con barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de bíceps con mancuerna</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de bíceps en banco scott</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de bíceps en polea baja con cuerda</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de bíceps estilo martillo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de bíceps supino en banco declinado</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de polea baja a una mano</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de polea en alto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Dominadas supinas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones diamante</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Triceps'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Barras paralelas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- En el suelo con pesas rusas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Extensiones con mancuerna en banco</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Extensiones de pie con mancuernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Extensiones en el suelo de press francés con deslizamiento</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Extensiones en TRX</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones con mancuernas y codos abiertos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones con manos juntas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones diamante</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Fondos para tríceps en banco</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press de banca</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press de banca agarre cerrado</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press francés con mancuernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Polea para tríceps son cuerda</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Trapecios'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Arrancada</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Cortacésped con mancuernas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevaciones frontales con disco</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Elevaciones posteriores en máquina contractora</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Encogimientos de hombro con pausa</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Paseo del granjero</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Peso muerto</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press por encima de la cabeza</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Press tras nuca</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Remo al cuello</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf = "ejercicio == 'Antebrazos'">
+    <ion-list>
+      <ion-item>
+        <ion-label>- Balanceos en Supinación</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Balanceos en Pronación</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Colgar en Posición Dominada Australiana</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl de Muñecas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Curl Inverso</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Colgar de la Barra</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Dominadas con Varas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Dominadas con Toalla</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Extensiones de Muñeca contra Muro</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones con Dedos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones de Brazos Sujetado con los Dedos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones de Muñecas</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Flexiones de Muñeca contra Muro (o Barra Baja)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- La Caminata del Granjero</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Levantamiento de Silla</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Pasamanos</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>- Rollos con los Dedos con Peso Corporal</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  <!-- __________________________________________________________________________ -->
+</ion-content>

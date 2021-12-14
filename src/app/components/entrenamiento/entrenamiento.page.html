@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="nav">
+    <ion-title>Entrenamiento</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- Content -->
+    <ion-list>
+      <ion-item>
+        <ion-label (click)="presentModal()">Rutina 1 (Principiante) </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label (click)="presentModal2()">Rutina 2 (Intermedio) </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label (click)="presentModal3()">Rutina 3 (Avanzado) </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label (click)="presentModal4()">Rutina 4 (Hipertrofia) </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label (click)="presentModal5()">Rutina 5 (Fuerza) </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label (click)="presentModal6()">Rutina 6 (Resistencia) </ion-label>
+      </ion-item><ion-item>
+        <ion-label (click)="presentModal7()">Rutina 7 (FullBody) </ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>

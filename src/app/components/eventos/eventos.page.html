@@ -1,0 +1,36 @@
+<ion-header>
+  
+  <ion-toolbar color="nav">
+    <ion-title class="pbt" >Eventos</ion-title> 
+   
+    <ion-button class="btn" (click)="redirect()" expand="block"  shape="round"> <ion-icon name="receipt"></ion-icon> &nbsp; Mis Eventos</ion-button>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- Content -->
+    
+   
+    <ion-content fullscreen>
+      <ion-card *ngFor="let evento of Eventos; let iControl=index">
+        <br>
+        <img src="http://localhost/worldfit/{{evento.Picture}}" />
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">{{evento.Title}}</ion-card-title> <br>
+          <ion-card-subtitle><strong class="b">Fecha: &nbsp;</strong>{{GetDate(evento.DateTime)}}</ion-card-subtitle> 
+          <ion-card-subtitle><strong class="b">Hora:&nbsp;</strong>{{GetTime(evento.DateTime)}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          {{evento.Description}}
+        </ion-card-content>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ion-button shape="round" (click)="SaveAndChange(evento.id_Event)" >Reservar</ion-button>
+        <ion-button  (click)="favorite(evento.id_Event)" shape="round">Favoritos</ion-button>
+      </ion-card>
+    </ion-content>
+
+
+</ion-content>

@@ -1,0 +1,29 @@
+
+<ion-content  class="background-image" no-scroll padding>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <ion-card-title class="ion-text-center"><strong>Bienvenido</strong> </ion-card-title>
+  <ion-card-subtitle class="second">Por Favor, Inicia Sesion Para Continuar</ion-card-subtitle>
+  <br>
+ 
+    <form #form="ngForm" (ngSubmit)="login(form)">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div padding>
+              <ion-label><strong>Usuario:</strong></ion-label>
+              <ion-item>
+                <ion-input name="user" type="text" placeholder="Your User" #userinput ngModel required></ion-input>
+              </ion-item>
+              <ion-label><strong>Contraseña:</strong></ion-label>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Your Password" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+</ion-content>

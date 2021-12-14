@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="nav">
+    <ion-title>Dieta</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+    <!-- Content -->
+       <!--  <form [formGroup]="formDiet">
+          <ion-card-content>
+            <ion-card-title class="ion-text-center" color="primary"><b>Calculadora Calorica</b></ion-card-title>
+            <br><ion-label class="title">&nbsp;&nbsp;&nbsp;Genero:</ion-label>
+            <ion-item>
+              <ion-label><p>Femenino</p></ion-label>
+              <ion-checkbox slot="start"></ion-checkbox>
+            </ion-item>
+            <ion-item >
+              <ion-label><p>Masculino</p></ion-label> 
+              <ion-checkbox slot="start" ></ion-checkbox>
+            </ion-item>
+           <ion-item>
+              <ion-label position="floor"><strong>Altura: </strong></ion-label>
+              <ion-input  type="number"></ion-input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+              <ion-label position="floor"><strong>Peso: </strong></ion-label>
+              <ion-input  type="number"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating"><strong>Edad: </strong></ion-label>
+              <ion-input type="number" step="1"></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label><strong>Factor Actividad:</strong></ion-label>
+              <ion-select value="Sed">
+                <ion-select-option value="Sed">Sedentario</ion-select-option>
+                <ion-select-option value="AL">Actividad Ligera</ion-select-option>
+                <ion-select-option value="AM">Actividad Moderada</ion-select-option>
+                <ion-select-option value="AI">Actividad Intensa</ion-select-option>
+                <ion-select-option value="AMI">Actividad Muy Intensa</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <br>
+            <ion-button (click)="enviarDatos()" expand="block">Calcular</ion-button>
+            <br>
+            <ion-label class="ion-text-center">2000 Kcals</ion-label>
+            <hr>
+          
+          
+          </ion-card-content>
+        </form> -->
+        <ion-card-title class="ion-text-center" color="primary"><b>Calculadora Calorica</b></ion-card-title>
+        <iframe src="https://es.calcuworld.com/calculadora-nutricional/calculadora-de-calorias-harris-benedict/?iframe=1" width="100%" height="100%"></iframe>    
+         
+        <br>
+        <br>
+        <ion-card>
+          <ion-card-title class="ion-text-center" color="primary"><b>Dietas</b></ion-card-title>
+        
+        <ion-label class="ion-text-center"><ion-card-title><strong>Visita los siguientes enlaces para ver dietas:</strong></ion-card-title></ion-label>
+        <br>
+
+        <ion-list>
+          <ion-router-link href="https://ectomorfosis.com/dieta-2500-calorias-volumen/" class="color">&nbsp;&nbsp;&nbsp;- Dieta de 2,500 Kcals NO. 2</ion-router-link>
+        <br>
+          <ion-router-link href="https://www.fisterra.com/ayuda-en-consulta/dietas/dieta-2.500-kcalorias-menus/" class="color">&nbsp;&nbsp;&nbsp;- Dieta de 2,500 Kcals NO. 1</ion-router-link>
+          <br>
+          <ion-router-link href="https://www.fisterra.com/ayuda-en-consulta/dietas/dieta-2.000-kcalorias-menus/" class="color">&nbsp;&nbsp;&nbsp;- Dieta de 2,000 Kcals</ion-router-link>
+          <br>
+          <ion-router-link href="https://www.fisterra.com/ayuda-en-consulta/dietas/dieta-1.500-kcalorias-menus/" class="color">&nbsp;&nbsp;&nbsp;- Dieta de 1,500 Kcals</ion-router-link>
+          <br>
+          <ion-router-link href="https://www.fisterra.com/ayuda-en-consulta/dietas/dieta-1.200-kcalorias-menus/" class="color">&nbsp;&nbsp;&nbsp;- Dieta de 1,200 Kcals</ion-router-link>
+        
+        </ion-list>
+        </ion-card>
+
+        
+        
+</ion-content>
+

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="nav">
+    <ion-title>Membresias</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- Content -->
+  
+    <ng-template [ngIf]="id_membresia == '1'" [ngIfElse]="loggedOut">
+      <div  >
+        <ion-content fullscreen>
+            <br>
+            <ion-card-header>
+              <ion-card-title ><ion-icon class="ic" size="large" name="diamond"></ion-icon>&nbsp;&nbsp;<strong>Premium</strong></ion-card-title>
+              <ion-card-subtitle>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>All Unlimited</small></ion-card-subtitle>
+              </ion-card-header>
+            <img src="../../../assets/tnk.jpg" />
+            <ion-card-content class="ion-text-center">
+              Gracias Por Adquirir Premium y formar parte de de nuestro equipo.... <br>
+              Tu membresia termina el {{fin_membresia}}
+            </ion-card-content>
+        </ion-content>
+      </div>
+    </ng-template>
+    
+    <ng-template #loggedOut>
+      <div>
+        <ion-content fullscreen>
+            <br>
+            <ion-card-header>
+              <ion-card-title ><ion-icon class="ic" size="large" name="diamond"></ion-icon>&nbsp;&nbsp;<strong>Premium</strong></ion-card-title>
+              <ion-card-subtitle>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>All Unlimited</small></ion-card-subtitle>
+              </ion-card-header>
+            <img src="../../../assets/workout.jpg" />
+            <ion-card-content>
+              Aproveche al máximo World Fit aquiriendo una membresia Premium y goza de todos sus beneficios por solo 155.00 MXN mensual.
+            </ion-card-content>
+            <ion-button  (click)="membership()" class="btn"  shape="round">Adquirir</ion-button>
+        </ion-content>
+      </div>
+    </ng-template>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+           
+  
+
+</ion-content>

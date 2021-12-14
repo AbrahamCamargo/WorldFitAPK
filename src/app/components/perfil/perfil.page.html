@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="nav">
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- Content -->
+      <ion-content fullscreen color="gray">
+        <br>
+        <br>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title color="primary" class="ion-text-center"><small><strong>Informacion Personal</strong></small></ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-card color="white">
+          <ion-card-header> 
+            <ion-icon class="ic"  name="Person"></ion-icon>
+            <ion-card-title class="ion-text-center">{{name}}&nbsp;{{lastname}}</ion-card-title>
+            <ion-card-subtitle></ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-item>
+            <ion-item>
+              <ion-label position="floating" color="primary"><strong>usuario</strong></ion-label>
+              <ion-input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{user_}}" disabled></ion-input>
+              <ion-label position="floating" color="primary"><strong>Correo</strong></ion-label>
+              <ion-input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{email}}" disabled></ion-input>
+              <ion-label position="floating" color="primary"><strong>Telefono</strong></ion-label>
+              <ion-input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{phone}}" disabled></ion-input>
+              <ion-label position="floating" color="primary"><strong>Genero</strong></ion-label>
+              <ion-input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{gender}}" disabled></ion-input>
+              <ion-label position="floating" color="primary"><strong>Fecha de Nacimiento</strong></ion-label>
+              <ion-input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{birthday}}" disabled></ion-input>
+              <ion-label position="floating" color="primary"><strong>Edad</strong></ion-label>
+              <ion-input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{age}}" disabled></ion-input>
+            </ion-item>
+          </ion-item>
+        </ion-card>
+                <ion-button [routerLink]="['/login']" routerLinkActive="router-link-active"  size="small" expand="block"  shape="round">Cerrar Sesión</ion-button>
+      </ion-content>
+      
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="nav">
+    <ion-title>Notas</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- Content -->
+    <ion-list>
+      <ion-item *ngFor= "let place of places">
+       <ion-label>
+        <h1>
+          {{place.title}}
+        </h1>
+        <p>
+          {{place.Comment}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal= "end" slot="fixed">
+  <ion-fab-button (click)="addNewNota()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
